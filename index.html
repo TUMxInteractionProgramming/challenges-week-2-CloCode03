@@ -1,191 +1,204 @@
-<!DOCTYPE html >
-<!-- #1 #structure #document -->
-<html>
-<head>
+<!DOCTYPE html>
 
-    <!-- #1 #structure #title -->
-    <title>chatter|app</title>
+<html lang="en">
 
-    <!-- We need to specify the character encoding, since we use chinese characters -->
-    <meta charset="UTF-8">
+ <head>
+    <title>MyChatterApp</title>
+ </head>
+   
+ <body>
+  
+  <!--MYCHATTERAPP parte sinistra-->
+  <div style="width: 25%; float: left;">
 
-    <!-- #2 #css #elements -->
-    <style>
+    <!--barra superiore-->
+    <div>
+        <span>
+          <h1>
+            <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="ChatterApp Logo"
+          style="height: 56px; background-color: #00796B; ">
+          Chatter App
+        </h1>
+        </span>
+    </div>
 
-        /* #2 #colorful #palette is:
-          * Background: #F5F5F5 (GREY 100)
-          * Primary Text: black
+    <!--canali-->
+    <div style="background-color:white">
+      <ul style="list-style-type: none; background-color: white;">
+          <li>#CittaDellaScienza <img src="https://ip.lfe.mw.tum.de/sections/star.png" class="star" alt="star logo"></li>
+          <li>#Edenlandia <img src="https://ip.lfe.mw.tum.de/sections/star.png" class="star" alt="star logo"></li>
+          <li>#Cinema <img src="https://ip.lfe.mw.tum.de/sections/star.png" class="star" alt="star logo"></li>
+          <li>#BeachGroup <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" class="star" alt="satr logo"></li>
+          <li>#TuttiAScuola <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" class="star" alt="star logo"></li>
+      </ul>       
+    </div>
 
-          * Primary color: #3F51B5 (INDIGO)
-          * Primary color_text : white
-          * Accent color: #CDDC39 (LIME)
-          * Accent color_text: black
-          */
-
-        /*global styles */
-        * {
-            /* #2 #font #faces */
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            /* #2 #colorful #background */
-            background-color: #F5F5F5;
-        }
-
-        h1 {
-            /* #2 #colourful #app-bar */
-            background-color: #3F51B5;
-            color: white;
-        }
-
-        button {
-            /* #2 #colourful #plusfive */
-            background-color: #CDDC39;
-            color: black;
-            /* #2 #font capital #letters */
-            text-transform: uppercase;
-        }
-
-
-        /*styles for channel area*/
-        h2 {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        /*styles for chat area*/
-        p {
-            /* #2 #colorful #channelandchat */
-            background-color: white;
-        }
-
-        strong {
-            /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
-            text-transform: uppercase;
-        }
-
-        h3 {
-            /* #2 #font #metadata is now medium */
-            font-size: medium;
-        }
-
-        em {
-            /* #2 #font #remaining overrides the default italic appearance of em elements*/
-            font-size: larger;
-            font-style: normal;
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-<!-- channel area -->
-<!-- #1 #channels #app-bar -->
-<h1>chatter|app</h1>
-
-<!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
-
-<!-- #1 #channels #buttons -->
-<button>new</button>
-<button>trending</button>
-<button>favorites</button>
+    <!--buttonsTAB-->
+    <div id="buttonsContainer" style="background-color: white;"> 
+      <button>
+        <img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" style="background-color:#009688;" alt="lightbulb image">
+        New
+      </button>
+      <button>
+          <img src="https://ip.lfe.mw.tum.de/sections/fire.png" style="background-color:#009688;" alt="fire image">
+          Trending
+      </button>
+      <button>
+          <img src="https://ip.lfe.mw.tum.de/sections/star.png" style="background-color:#009688;" alt="star image">
+          Favourites
+      </button>
+    </div>
 
 
-<!-- chat area -->
-<!-- #1 #chat #name -->
-<h1>#SevenContinents
-    <!-- #1 #chat #location is wrapped in small tag-->
-    <small>by
-        <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-        <strong>cheeses.yard.applies</strong>
-    </small>
-</h1>
+  </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>cheeses.yard.applies</strong>
-    Wed, June 20th, 13:37
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>15 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>What's the place you folks call home?</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>truck.cotton.zone</strong>
-    Wed, June 20th, 13:39
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>4 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>BRISBANE! Hang loose!</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+  
+  <!--MYCHATTERAPP parte destra-->
+  <div style="width: 75%; float: right;">
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>thus.best.dishes</strong>
-    Wed, June 20th, 14:02
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>12 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>The big apple.</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!--barra superiore parte2-->
+    <div>
+      <h1>#Edenlandia <a href="https://map.what3words.com/alunni.sconvolgere.progetti" target="_blank" id="H01"> <small>by alunni.sconvolgere.progetti</small></a></h1>
+    </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>driveway.helper.magazine</strong>
-    Wed, June 20th, 14:02
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>7 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>Eu sou um Carocas.</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+    <!--chat 1-->
+    <div>
+      <div class="container">
+        <h4 class="MetaData"> 
+         <a href="https://map.what3words.com/smalto.arrosto.visibile?utm_source=sleeknote&utm_medium=cta&utm_campaign=B2C_4561_Pt_Map_Org_WO_en_Sleeknote_BloombergB" target= "_blank"> smalto.arrosto.visibile</a> 
+         Mon, August 1st, 10:30 
+         <em>3 min. left</em>
+        </h4>
+      </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>escapes.pitch.saucepan</strong>
-    Wed, June 20th, 14:07
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>14 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>Greetings from the western cape!</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+      <div>
+        <p>
+          <div class="ChatContainer">
+             what about going there on Wed?
+          </div>
+        </p>
+      </div>
 
-<!-- #1 #chat #metadata contains location, weekday, day, and time  -->
-<h3>
-    <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>meanings.identity.pays</strong>
-    Wed, June 20th, 04:08
-    <!-- #1 #chat #ttl lives inside the metadata -->
-    <em>15 min. left</em>
-</h3>
-<!-- #1 #chat #messages depict a short fictional chat-->
-<p>北京</p>
-<!-- #1 #chat #button subsequent to each message -->
-<button>+5 min.</button>
+      <div class="container">
+       <button>
+         +5 min
+       </button>
+      </div>     
+    </div>
 
-</body>
+    <!--chat 2-->
+    <div>
+      <div class="container">
+        <h4 class="MetaData"> 
+            <a href="https://map.what3words.com/preziose.favoloso.sentire?utm_source=sleeknote&utm_medium=cta&utm_campaign=B2C_4561_Pt_Map_Org_WO_en_Sleeknote_BloombergB" target= "_blank"> preziose.favoloso.sentire</a>, 
+            Mon, August 1st, 11:00 
+            <em>16 min. left</em> 
+        </h4>
+      </div>
+
+      <div>
+        <p>
+          <div class="ChatContainer">
+            yeah, it would be great!
+          </div>
+          
+        </p>
+      </div>
+
+      <div class="container">
+       <button>
+         +5 min
+       </button>
+      </div>     
+    </div>
+
+    <!--chat 3-->
+    <div>
+        <div class="container">
+          <h4 class="MetaData"> 
+            <a href="https://map.what3words.com/piatte.dipinte.mandorla?utm_source=sleeknote&utm_medium=cta&utm_campaign=B2C_4561_Pt_Map_Org_WO_en_Sleeknote_BloombergB" target= "_blank"> piatte.dipinte.mandorla</a>, 
+             Mon, August 2nd, 00:15 
+            <em>21 min. left</em>    
+          </h4>
+        </div>
+  
+        <div>
+          <p>
+            <div class="ChatContainer">
+              sorry guys, I'm busy
+            </div>
+           
+          </p>
+        </div>
+  
+        <div class="container">
+         <button>
+           +5 min
+         </button>
+        </div>     
+    </div>
+  
+  </div>
+
+
+
+ <!--CSS-->
+ <style> 
+
+   * { 
+  background: #f3f1f1;
+  font-family: Arial, sans-serif;}
+
+   h1 {
+  background-color: #00796B}
+
+   small {
+  background-color: #00796B;}
+
+   button { 
+  text-transform: uppercase;
+  background-color: #009688;   }
+
+   h3{
+  background-color: white;}
+
+   em {
+  font-size: large;
+  background-color: transparent;}
+
+
+   a:link {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  text-transform: uppercase;}
+
+   a :visited {
+  background-color: transparent;}
+
+   #H01 {
+  background-color:#00796B;
+  color: black;
+  text-decoration: none;}
+
+   .MetaData {
+  font-size: large;}
+
+   li {
+  background-color: white;}
+
+   .star {
+  background-color: white;}
+
+  .ChatContainer {
+    width: 80%;
+    background-color: white;
+  }
+  
+
+ </style>
+
+ </body>
+
 </html>
